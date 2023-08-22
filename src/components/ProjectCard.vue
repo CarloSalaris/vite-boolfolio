@@ -1,9 +1,17 @@
 <script>
 export default {
-    name: 'ProjectCard'
+    name: 'ProjectCard',
+    props: {
+        project: {
+            type: Object,
+            required: true
+        }
+    }
 }
 </script>
 
 <template>
-    <h1>Project Card</h1>
+    <div class="card col-3 m-3">
+        <h1>{{ project.title }}</h1>
+    </div>
 </template>
