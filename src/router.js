@@ -11,7 +11,7 @@ routes: [
 {
     path: '/project/:id',
     name: 'project',
-    component: () => import('./pages/ProjectDetails.vue')
+    component: () => import('./pages/ProjectShow.vue')
 },
 ]
 });
