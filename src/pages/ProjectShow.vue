@@ -44,14 +44,15 @@ export default {
             <p>{{ project.description }}</p>
         </div>
 
-        <div class="btn btn-primary col-2">
-            <router-link 
+        <router-link 
                 :to="{
                     name:'home'
                 }">
+                <div class="btn btn-primary col-2">
                 HOME
-            </router-link>
-        </div>
+                </div>
+      </router-link>
+
     </div>
   </div>
 
