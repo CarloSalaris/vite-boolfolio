@@ -13,7 +13,8 @@ export default {
   },
 
   mounted() {
-    axios.get(API_URL + '/project/' + this.$route.params.id)
+    const projectId = this.$route.params.id;
+    axios.get(API_URL + '/project/' + projectId)
       .then(res => {
 
         /*  const data = res.data.projects;
